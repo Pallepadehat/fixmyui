@@ -53,7 +53,7 @@ const LoginPage = () => {
               variant="outline"
               size="lg"
               className="w-full font-normal transition-all hover:bg-secondary/80 hover:translate-y-[-1px] active:translate-y-[1px] border-border dark:border-zinc-800"
-              onClick={() => signIn("google", { callbackUrl: "/" })}
+              onClick={() => signIn("google", { redirectTo: "/dashboard" })}
             >
               <FaGoogle className="mr-2 h-4 w-4" />
               <span>Continue with Google</span>
@@ -63,7 +63,7 @@ const LoginPage = () => {
               variant="outline"
               size="lg"
               className="w-full font-normal transition-all hover:bg-secondary/80 hover:translate-y-[-1px] active:translate-y-[1px] border-border dark:border-zinc-800"
-              onClick={() => signIn("github", { callbackUrl: "/" })}
+              onClick={() => signIn("github", { redirectTo: "/dashboard" })}
             >
               <FaGithub className="mr-2 h-4 w-4" />
               <span>Continue with GitHub</span>
